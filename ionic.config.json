@@ -1,0 +1,7 @@
+{
+  "name": "myRealMadrid",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

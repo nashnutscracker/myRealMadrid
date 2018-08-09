@@ -1,0 +1,43 @@
+<ion-header>
+
+  <ion-navbar color="primary" text-center>
+    <ion-title>News</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="masters" text-center>
+
+  <ion-card *ngFor="let news1 of (news1 | async)?.articles">
+
+    <ion-card-content>
+      <ion-card-header>
+        <b>{{news1.title}}</b>
+      </ion-card-header>
+      <img src="{{news1.urlToImage}}" />
+      <br> {{news1.description}}
+      <br>
+      <br>Published on {{news1.publishedAt}}
+      <br>
+      <a href="{{news1.url}}">Read more</a>
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card *ngFor="let news of (news | async)?.articles">
+
+    <ion-card-content>
+      <ion-card-header>
+        <b>{{news.title}}</b>
+      </ion-card-header>
+      <img src="{{news.urlToImage}}" />
+      <br> {{news.description}}
+      <br>
+      <br>Published on {{news.publishedAt}}
+      <br>
+      <a href="{{news.url}}">Read more</a>
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>
