@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { TeamsConfigConst } from '../../assets/teams';
+import { WebPage } from '../web/web';
 
 @Component({
   selector: 'page-home',
@@ -11,5 +12,7 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
 
   }
-
+  web() {
+    this.navCtrl.push(WebPage);
+  }
 }

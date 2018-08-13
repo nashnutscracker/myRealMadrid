@@ -45,6 +45,13 @@ export const TeamsConfigConst = {
         "team4": "../../assets/imgs/club4.png",
         "team5": "../../assets/imgs/club5.png",
         "teamVsTeam": "../../assets/imgs/vs.png"
+    },
+
+    socialLinks: {
+        "facebook": "https://www.facebook.com/RealMadrid/",
+        "instagram": "https://www.instagram.com/realmadrid/?hl=en",
+        "twitter": "https://twitter.com/realmadrid?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+        "youtube": "https://www.youtube.com/channel/UCWV3obpZVGgJ3j9FVhEjF2Q"
     }
 }
 

@@ -10,5 +10,24 @@
   <div align="center">
     <img src="{{TeamConfigObj.logos.teamHome}}" />
   </div>
-  <b class="desc">Welcome to My Real Madrid App.</b>
+  <b class="desc">Welcome to My Real Madrid App!</b>
+  <br>
+  <br>
+  <b style="color: white;">Follow Real Madrid on social media!</b>
+  <br>
+  <br>
+  <a href="{{TeamConfigObj.socialLinks.facebook}}" target="iframe_a" (click)="web()">
+    <ion-icon name="logo-facebook"></ion-icon>
+  </a>
+  <a href="{{TeamConfigObj.socialLinks.instagram}}" target="iframe_a" (click)="web()">
+    <ion-icon name="logo-instagram"></ion-icon>
+  </a>
+  <a href="{{TeamConfigObj.socialLinks.twitter}}" target="iframe_a" (click)="web()">
+    <ion-icon name="logo-twitter"></ion-icon>
+  </a>
+  <a href="{{TeamConfigObj.socialLinks.youtube}}" target="iframe_a" (click)="web()">
+    <ion-icon name="logo-youtube"></ion-icon>
+  </a>
+
+  <!-- To make it work on chrome, download this https://chrome.google.com/webstore/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe/reviews -->
 </ion-content>
