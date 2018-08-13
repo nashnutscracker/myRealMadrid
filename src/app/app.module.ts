@@ -15,6 +15,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
+import { WebPage } from '../pages/web/web';
 
 
 
@@ -26,7 +27,8 @@ import { HttpModule } from '@angular/http';
     HomePage,
     TabsPage,
     MatchesPage,
-    NewsPage
+    NewsPage,
+    WebPage
   ],
   imports: [
     BrowserModule,
@@ -42,7 +44,8 @@ import { HttpModule } from '@angular/http';
     HomePage,
     TabsPage,
     MatchesPage,
-    NewsPage
+    NewsPage,
+    WebPage
   ],
   providers: [
     StatusBar,

@@ -8,6 +8,7 @@
 
 <ion-content padding class="masters" text-center>
 
+
   <ion-card *ngFor="let news1 of (news1 | async)?.articles">
 
     <ion-card-content>
@@ -19,7 +20,7 @@
       <br>
       <br>Published on {{news1.publishedAt}}
       <br>
-      <a href="{{news1.url}}">Read more</a>
+      <a href="{{news1.url}}" target="iframe_a" (click)="web()">Read more</a>
     </ion-card-content>
 
   </ion-card>
@@ -35,7 +36,7 @@
       <br>
       <br>Published on {{news.publishedAt}}
       <br>
-      <a href="{{news.url}}">Read more</a>
+      <a href="{{news.url}}" target="iframe_a" (click)="web()">Read more</a>
     </ion-card-content>
 
   </ion-card>
